@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import {BrowserRouter } from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 // import Diary from "./pages/Diary";
 // import Home from "./pages/Home";
 // import New from "./pages/New";
@@ -41,7 +41,7 @@ root.render(
     // <RouterProvider router={router}>
     //     <App />
     // </RouterProvider>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
+    <BrowserRouter>
+        <App/>
+    </BrowserRouter>
 );
