@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Button from "./Button";
-import "../component/DiaryList.css";
+import "./DiaryList.css";
 import { useNavigate } from "react-router-dom";
 import DiaryItem from "./DiaryItem";
 
