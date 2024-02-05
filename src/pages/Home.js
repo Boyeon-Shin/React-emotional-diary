@@ -33,6 +33,7 @@ const Home = () => {
     }, [data, pivotDate]);
 
     return (
+
     <div>
         <Header
             title = {headerTitle}
@@ -41,6 +42,7 @@ const Home = () => {
         />
         <DiaryList data = {filteredData} />
     </div>
+
     );
 };
 export default Home;
