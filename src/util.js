@@ -17,12 +17,11 @@ export const getEmotionImgById = (emotionId) => {
             return emotion4;
         case "5":
             return emotion5;
-        default:
+            default:
             return null;
     }
-};
 
-export const getFormattedDate = (targetDate) => { // 기본값 오늘 날짜 자동 설정
+export const getFormattedDate = (targetDate) => {
     let year = targetDate.getFullYear();
     let month = targetDate.getMonth() + 1;
     let date = targetDate.getDate();
@@ -57,8 +56,25 @@ export const emotionList = [
         img: getEmotionImgById(4),
     },
     {
-        id : 5,
-        name: "끔찍함",
+        id: 5,
+        name: "지대짱남",
         img: getEmotionImgById(5),
     },
-]
+];
+
+export const getMonthRangeByDate = (date) => {
+    const beginTimeStamp = new Date(
+        date.getFullYear(),
+        date.getMonth(),
+        1
+    ).getTime();
+    const endTimeStamp = new Date(
+        date.getFullYear(),
+        date.getMonth() + 1,
+        0,
+        23,
+        59,
+        59
+    ).getTime();
+    return { beginTimeStamp, endTimeStamp };
+};
