@@ -8,6 +8,7 @@ import {BrowserRouter} from "react-router-dom";
 // import Home from "./pages/Home";
 // import New from "./pages/New";
 // import Edit from "./pages/Edit";
+
 // export const router = createBrowserRouter([
 //     {
 //         path: "/",
@@ -19,12 +20,12 @@ import {BrowserRouter} from "react-router-dom";
 //                 label: 'main'
 //             },
 //             {
-//                 path: "/new/*",
+//                 path: "/new/",
 //                 element: <New />,
 //                 label: 'A'
 //             },
 //             {
-//                 path: "/diary/*",
+//                 path: "/diary/",
 //                 element: <Diary />,
 //                 label: 'A'
 //             },
