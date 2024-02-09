@@ -1,6 +1,5 @@
 import "./Editor.css";
 import { useState, useEffect } from "react";
-import { getFormattedDate } from "../util";
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
 import { emotionList, getFormattedDate } from "../util";
